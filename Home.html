@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- BootStrap CSS -->
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+          rel="stylesheet">
+        <link href="/Users/batman/Documents/MyPortfolio/styles.css"
+          rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+		<!--  JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+			$(document).ready(function() {
+				$("a").on('click', function(event) {
+					if (this.hash !== "") {
+						event.preventDefault();	
+						var hash = this.hash;
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top -66
+						}, 800, function() {
+							window.location.hash = hash;
+						});
+					}
+				});
+			});
+		</script>
+        <script>
+			$(document).ready(function() {
+				$('.nav').on('click', 'li', function(){
+					$('.nav li').removeClass('active');
+					$(this).addClass('active');
+				});
+			});
+		</script>
+        <title>Prasanth's Portfolio</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" id="scrollContent">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavBar" aria-expanded="false"> <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>	</button>
+<!--					<a class="navbar-brand" href="#">Prasanth Ramineni</a>-->
+				</div>
+				<div class="collapse navbar-collapse" id="defaultNavBar">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#home">Home<span class="sr-only"></span></a></li>
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#education">Education</a></li>
+<!--						<li><a href="#">Projects</a></li>-->
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="pageContent">
+		<section class="homeSection" id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 containerBanner">
+						<div class="col-md-3">
+							<div class="imageBanner">
+								<img class="imageStyle" src="/Users/batman/Documents/MyPortfolio/profile.jpg" height="210px" width="210px" alt="Prasanth Ramineni">
+							</div>
+						</div>
+						<div class="col-md-4 transfromPosition">
+							<div class="nameBanner">
+								<p>PRASANTH RAMINENI</p>
+<!--								<p class="description">Intern - ServiceNow | San Jose State University</p>-->
+								<ul class="social">
+									<li>
+										<a href="https://www.linkedin.com/in/ramineni-prasanth" target="_blank">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.github.com/prasanth270" target="_blank">
+											<i class="fa fa-github"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/ramineni.prasanth" target="_blank">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 transfromPosition">
+							<div class="addressBanner">
+								<p>1322 The Alameda,</p>
+								<p>San Jose, CA, 95126</p>
+								<a>prasanth.ramineni@sjsu.edu</a>
+								<br>
+								<p>510-203-9958</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="aboutMe" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-4 sectionTitle">
+							<h2><span>About Me</span></h2>
+						</div>
+						<div class="col-md-8 sectionDetails">
+							<div>
+								<span>Hello everyone, my name is Prasanth and I am a Graduate Student at San Jose State University, expecting to graduate in Dec'17. I am currently located in San Jose, California and interning at ServiceNow. Before I moved to the USA for my Master's degree, I was working as a Software Solutions Developer for Cognizant Technology Solutions.</span><br><br>
+							</div>
+							<div>
+								<span>I love to build Mobile applications, learn programming languages and love to call myself a 'Jack of All Trades;'. I am adaptable and a quick solution thinker and my love for building software is what made me move to The Silicon Valley.</span><br><br>
+							</div>
+							<div>
+								<span>I aspire to be in a position where I can improve my skillset and contribute towards the growth of the Information Technology Industry. My interests are in the field of Mobile Applications development, Data Analytics and Web Applications Development.</span><br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="experience" id="experience">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-4 sectionTitle">
+							<h2><span>Experience</span></h2>
+						</div>
+						<div class="col-md-8">
+							<div class="sectionDetails">
+								<h2>Technical Analyst Intern</h2>
+								<h3>ServiceNow - The Enterprise Cloud Company | Feb'17 - Present</h3>
+								<span>Understanding ServiceNow products and working on application enhancement.<br> Work with user experience and performance teams to enhance product features.</span>
+							</div>
+							<div class="sectionDetails">
+								<h2>Student Assistant</h2>
+								<h3>San Jose State University | Aug'16 - Present</h3>
+								<span>Provide technical support to faculty and students in Incubator and Next Gen classrooms.</span><br>
+								<span>Image and update laptops for students (Windows and MacOS).</span><br>
+								<span>Install and service projectors, Crestron control panels and smart TVs.</span><br>
+								<span>Set up and test equipment including projectors, smartboards, IPads and Cisco Telecom.</span><br>
+								<span>Report and resolve issues using the iSupport portal.</span><br>
+								<span>Assist professors and students in finding the right equipment for their usage including laptop connectors, projectors, digital cameras, etc.</span><br>
+							</div>
+							<div class="sectionDetails">
+								<h2>Programmer Analyst</h2>
+								<h3>Cognizant Technology Solutions | Dec'13 - Dec'15</h3>
+								<span>
+									As part of Walmarts' offshore team, My role is to understand Walmart's Legacy Distribution Center operations and develop software solutions by studying new design requirements; investigating problem areas and fixing existing bugs in the application following the Agile software lifecycle for product delivery. I had to document and demonstrate solution approach by developing documentation, flowcharts, UML diagrams and fix code review comments by peers. Some key achievements of my tenure at Cognizant are
+								</span><br>
+								<span>› Optimized Item search across multiple zones; Improving the efficiency of Zone retrieval API by over 60%.</span><br>
+								<span>›	Redesigned Order update system for real-time order tracking; Camel Blueprints scheduling using Linux Cron Job.</span><br>
+								<span>›	Integrated Walmart Gift Cards item end to end flow into Legacy Logistics System; from receiving order to shipping an order</span><br>
+								<span>›	Developed Shell Scripts for Static data migration and environment data validation on a Unix Server.</span><br>
+								<span>›	Developed UI tool for performance analysis across multiple distribution centers; Data extraction and comparison from logs using Charts API and Spring Batch Jobs</span><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="education" id="education">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-4 sectionTitle">
+							<h2><span>Education</span></h2>
+						</div>
+						<div class="col-md-8">
+							<div class="sectionDetails">
+								<h2>San José State University</h2>
+								<h3>Master of Science | Graduating Dec'17</h3>
+								<p>GPA: 3.6/4</p>
+							</div>
+							<div class="sectionDetails">
+								<h2>SCSVMV University</h2>
+								<h3>Bachelor of Technology | Aug'09 - May'13</h3>
+								<p>GPA: 8.3/10</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="skills">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-4 sectionTitle">
+							<h2><span>Skills</span></h2>
+						</div>
+						<div class="col-md-8">
+							<div class="sectionDetails">
+								<span><b>Programming and Scripting Languages:</b> Java, JavaScript, Python, Shell Scripting.</span><br>
+								<span><b>Frameworks and Tools:</b> Spring, Hibernate, HTML5/CSS, XML, JSON, Cocoa Pods, RESTful Services, git, SVN, Maven.</span><br>
+								<span><b>Mobile Technologies:</b> iOS (Xcode) and Android OS (Android Studio) App development, Ionic Hybrid framework.</span><br>
+								<span><b>Big Data Frameworks:</b> Hadoop/MapReduce, Apache Spark</span><br>
+								<span><b>OS and Databases:</b> Linux, Unix, macOS and Windows; MySQL, MongoDB, Firebase NoSQL DB, Oracle 11g and IBM Informix</span><br>
+								<span><b>Network Applications:</b> Floodlight controller, SDN, VMWare NSX, Socket Programming, TCP/IP and Network Protocols</span><br>
+								<span><b>Programming Methodologies:</b> Micro Services, Agile SCRUM development, Test Driven Development.</span><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="messageMe" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div>
+							<h3>Message Me</h3>
+						</div>
+						<div>
+							<textarea class="textAreaForm" placeholder="Please write your message and contact details"></textarea>
+						</div>
+						<div>
+							<button class="sendButton">Send</button>
+						</div>
+					</div>
+					<br>
+					<br>
+				</div>
+			</div>
+		</section>
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer">
+						<span>Design by Prasanth Ramineni</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		</div>
+	</body>
+</html>

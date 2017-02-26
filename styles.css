@@ -1,0 +1,194 @@
+.imageBanner {
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+}
+
+.imageStyle {
+	border-radius: 50%;
+    padding:4px;
+    border:3px solid #28aae1;
+}
+
+.nameBanner {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	font-family: Avenir;
+}
+
+/*
+h2 {
+	font-family: PT Sans Narrow, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #28aae1;
+}
+*/
+
+.aboutMe {
+	margin: 20px;
+}
+
+.experience {
+	margin: 20px;
+}
+
+.education {
+	margin: 20px;
+}
+
+.projects {
+	margin: 20px;
+}
+
+.skills {
+	margin: 20px;
+}
+
+.messageMe {
+	background: #28aae1;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.textAreaForm {
+	border-radius: 9px;
+	padding: 16px;
+	border: 2px solid #fff;
+	width: 100%;
+}
+
+.sendButton {
+	margin-top: 10px;
+	font-family: PT Sans Narrow, sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 8px;
+	box-sizing: border-box;
+	cursor: pointer;
+	color:#fff;
+	width: 140px;
+	height: 32px;
+	border: 1px solid #fff;
+	border-radius: 40px;
+	transition: all .3s ease-in-out;
+	float: right;
+	background-color: transparent;
+}
+
+.messageMe h3 {
+	font-family: PT Sans Narrow, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+
+}
+
+.sectionTitle {
+	text-align: center;
+	font-family: PT Sans Narrow, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #28aae1;
+}
+
+.sectionTitle span {
+	border-bottom: 3px solid #11ABB0;
+	padding-bottom: 3px;
+}
+
+.sectionDetails {
+	font-family: PT Sans Narrow, sans-serif;
+	text-align: justify;
+}
+
+.sectionDetails h2 {
+	color: #11ABB0;
+}
+
+.sectionDetails h3 {
+	color: #adceb9;
+}
+
+.sectionDetails p {
+	font-size: 18px;
+}
+
+.sectionDetails span {
+	font-size: 14.5px;
+	font-family: Avenir;
+	line-height: 30px;
+}
+
+.description {
+	font-size: 12px;
+}
+
+.addressBanner {
+	color: white;
+	text-align: right;
+	font-size: 16px;
+	font-family: Avenir;
+}
+
+.transfromPosition {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.containerBanner {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.social {
+	white-space: nowrap;
+	justify-content: center;
+	padding-left: 10px;
+}
+
+.social li {
+	display: inline-block;
+	width: 10%;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.containerBanner {
+	float: left;
+	margin: 20px;
+}
+
+.homeSection {
+	background-color: #383738;
+	margin-top: 20px;
+}
+
+.footer {
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	font-family: Avenir;
+}
+
+#footer {
+	border-radius: 1px;
+	padding: 5px;
+	background-color: #383738;
+	display: flex;
+}
+
+#scrollContent {
+	position: fixed;
+	width: 100%;
+	overflow-y: hidden;
+	z-index: 1;
+/*	overflow: auto;*/
+}
+
+#pageContent {
+	padding-top: 30px;
+}
