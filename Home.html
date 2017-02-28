@@ -6,35 +6,14 @@
 		<!-- BootStrap CSS -->
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
           rel="stylesheet">
-        <link href="/Users/batman/Documents/MyPortfolio/styles.css"
+        <link href="styles.css"
           rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet">
 		<!--  JQuery -->
+		
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script>
-			$(document).ready(function() {
-				$("a").on('click', function(event) {
-					if (this.hash !== "") {
-						event.preventDefault();	
-						var hash = this.hash;
-						$('html, body').animate({
-							scrollTop: $(hash).offset().top -66
-						}, 800, function() {
-							window.location.hash = hash;
-						});
-					}
-				});
-			});
-		</script>
-        <script>
-			$(document).ready(function() {
-				$('.nav').on('click', 'li', function(){
-					$('.nav li').removeClass('active');
-					$(this).addClass('active');
-				});
-			});
-		</script>
+        <script src ="script.js"></script>
         <title>Prasanth's Portfolio</title>
 	</head>
 	<body>
@@ -63,7 +42,7 @@
 					<div class="col-md-12 containerBanner">
 						<div class="col-md-3">
 							<div class="imageBanner">
-								<img class="imageStyle" src="/Users/batman/Documents/MyPortfolio/profile.jpg" height="210px" width="210px" alt="Prasanth Ramineni">
+								<img class="imageStyle" src="profile.jpg" height="210px" width="210px" alt="Prasanth Ramineni">
 							</div>
 						</div>
 						<div class="col-md-4 transfromPosition">
